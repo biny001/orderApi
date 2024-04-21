@@ -11,7 +11,7 @@ router.get("/:id", async (req, res) => {
     const order = await Order.findById(req.params.id);
     res.status(200).json(order);
   } catch (error) {
-    console.log("error");
+    console.log("errors");
   }
 });
 router.post("/", async (req, res) => {
