@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/test(.*)",
+      "dest": "/routes/testRoute.js"
+    },
+    {
+      "src": "/api/user(.*)",
+      "dest": "/routes/userRoute.js"
+    },
+    {
+      "src": "/api/order(.*)",
+      "dest": "/routes/orderRoute.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
